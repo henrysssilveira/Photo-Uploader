@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes de Fotos</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="mb-10">
+    <!--o site serve para que os clientes entrem e recuperem as fotos que tiraram com
+    um fotografo, de acorodo com o numero gerado pelo js quando o fotografo insere as fotos.-->
+    <header class="w-full h-full" style="background-color: #1b1324;">
+        <div class="flex justify-around py-5">
+            <h1 class="text-3xl font-bold"><span>PhotoUploader</span></h1>
+            <div id="links" class="font-semibold grid grid-cols-3 content-center gap">
+                <a href="#SelecioneArquivo" class="px-4">Fazer Upload</a>
+                <a href="#busca" class="px-4">Acessar as fotos</a>
+                <a href="login.html" class="px-4">Login</a>
+            </div>
+        </div>
+    </header>
+    <div class="flex justify-center scale-90 h-170"><img src="./assets/Novo Projeto-camera-1.png"></div> <!--h-64 mb-10-->
+    <div id="secao1" class="flex justify-center grid justify-items-center">
+        <div class="relative inline-block">
+            <div class="absolute inset-0 bg-[#583b75] skew-x-12 -z-10"></div>
+        </div>
+        <div class="relative font-semibold text-[24px]">
+            ACHE SUAS
+            <span class="text-white relative inline-block before:absolute before:-inset-1 before:block before:-skew-9 before:bg-fuchsia-500">
+                <span class="relative text-white">FOTOS</span>
+            </span>
+             AQUI
+        </div>
+        <input type="text" id="busca" placeholder="Insira seu codigo aqui*" class="cursor-text text-[#7b7185] bg-[#f0edf2] border-b-3 border-[#d5b5f5] rounded-2xl h-10 text-center my-5 w-sm">
+        <button id="procura" class="cursor-pointer active:scale-90 shadow-lg shadow-[#7631bd]/50 px-8 border border-none rounded-2xl h-10 mx-8 bg-[#9b42f5] font-bold text-base active:bg-[#c778d6]">PROCURAR</button>
+    </div>
+    <div class="flex justify-center grid justify-items-center">
+        <div class="p-45 my-10 rounded-2xl border-4 border-dashed text-center bg-[#231333] font-bold text-[#583b75]" >
+            <h2>Arraste Aqui suas fotos!</h2>
+            <label id="SelecioneArquivo" for="file-upload" class="active:bg-[#c778d6] mt-4 text-[#583b75] block w-64 cursor-pointer rounded-lg bg-gray-200 px-4 py-2 text-center hover:bg-[#d5b5f5]">
+                Ou selecione os arquivos!
+            </label>
+            <input id="file-upload" type="file" class="hidden">
+        </div>
+        <button id="enviar" class="active:bg-[#c778d6] active:scale-90 cursor-pointer shadow-lg shadow-[#7631bd]/50 px-8 border border-none rounded-2xl h-10 mx-8 bg-[#9b42f5] font-bold text-base">Enviar e Gerar Código</button>
+    </div>
+</body>
+</html>
+<!--       
+            <h1 class="font-semibold text-2xl">ACHE SUAS FOTOS AQUI!</h1>
+            border border-dashed bg-fuchsia-500 p-3 rounded-2xl mt-4 text-white-->
