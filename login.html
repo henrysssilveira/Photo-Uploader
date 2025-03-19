@@ -32,13 +32,17 @@
             <div id="singup" class="mx-2 bg-[#6f4b94]/30 flex justify-center w-100 h-120 rounded-2xl grid justify-items-center self-start">
                 <h1 class="mt-6 font-bold text-3xl">Cadastre-se</h1>
                 <div class="mt-24 grid justify-items-center absolute mx-4 text-center">
-                    <label for="opcoes"></label>
-                    <select id="opcoes" name="opcoes" class="font-bold border-none border-2 focus:text-fuchsia-500 focus:border-solid focus:border-fuchsia-500 outline-none text-center text-bold text-[#F094FD] bg-white h-10 w-40 rounded-2xl">
-                        <option value="" disabled selected>quem é você?</option>
-                        <option value="1">Fotografo</option>
-                        <option value="2">Cliente</option>
-                        <option value="3">Empresa</option>
-                    </select>
+                    <div id="select-user" class="flex flex-row items-center">
+                        <input type="text" placeholder="Crie um Username!" class="mr-2 h-10 w-39 bg-white outline-none text-fuchsia-500 border-none focus:border-2 focus:border-fuchsia-500 text-center font-bold rounded-2xl focus:text-fuchsia-500">
+                        
+                        <label for="opcoes"></label>
+                        <select id="opcoes" name="opcoes" class="font-bold border-none border-2 focus:text-fuchsia-500 focus:border-solid focus:border-fuchsia-500 outline-none text-center text-bold text-[#F094FD] bg-white h-10 w-39 rounded-2xl">
+                            <option value="" disabled selected>quem é você?</option>
+                            <option value="1">Fotografo</option>
+                            <option value="2">Cliente</option>
+                            <option value="3">Empresa</option>
+                        </select>
+                    </div>
                     <input id="singup-email" type="email" placeholder="Insira seu email aqui!" class="h-10 w-80 bg-white border-2 transition border-none focus:border-solid focus:border-fuchsia-500 outline-none text-fuchsia-500 rounded-2xl text-center font-bold my-4">
                     <input id="singup-password" type="password" placeholder="Insira sua senha aqui!" class="h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
                     <input id="singup-password" type="password" placeholder="Insira novamente sua senha!" class="my-4 h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
