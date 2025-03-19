@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
         <header class="w-full h-full" style="background-color: #1b1324;">
             <div class="flex justify-around py-5">
                 <a class="text-3xl font-bold" href="index.html"><span>PhotoUploader</span></a>
-                <div id="links" class="font-semibold grid grid-cols-3 content-center gap">
-                    <a href="#SelecioneArquivo" class="px-4">Fazer Upload</a>
-                    <a href="#busca" class="px-4">Acessar as fotos</a>
-                    <a href="index.html" class="px-4">Página Inicial</a>
+                <div id="links" class="font-semibold flex items-center flex-row">
+                    <a href="index.html" class="">Fazer Upload</a>
+                    <a href="index.html" class="px-6">Acessar as fotos</a>
+                    <a href="index.html" class="">
+                        <button class="h-10 w-50 bg-white text-fuchsia-500 active:scale-90 active:bg-[#d5b5f5] active:text-white rounded-2xl">Página Inicial</button>
+                    </a>
                 </div>
             </div>
         </header>
         <div class="flex justify-center mt-15 flex items-stretch">
-            <div id="campos" class="bg-[#6f4b94]/30 flex justify-center w-100 h-120 rounded-2xl grid justify-items-center self-start">
+            <div id="login" class="mx-2 bg-[#6f4b94]/30 flex justify-center w-100 h-120 rounded-2xl grid justify-items-center self-start">
                 <h1 class="mt-6 font-bold text-3xl">Login</h1>
                 <div class="mt-24 grid justify-items-center absolute mx-4 text-center">
-
-                <input id="email" type="email" placeholder="Insira seu email aqui!" class="h-10 w-80 bg-white border-2 transition border-none focus:border-solid focus:border-fuchsia-500 outline-none text-fuchsia-500 rounded-2xl text-center font-bold my-4">
-                <input id="password" type="password" placeholder="Insira sua senha aqui!" class="h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
-                <button id="login-btn" class="mt-4 cursor-pointer active:scale-90 shadow-lg shadow-[#7631bd]/50 px-8 border border-none rounded-2xl h-10 mx-8 bg-[#9b42f5] font-bold text-base active:bg-[#c778d6]">Entrar</button>
+                <input id="login-email" type="email" placeholder="Insira seu email aqui!" class="h-10 w-80 bg-white border-2 transition border-none focus:border-solid focus:border-fuchsia-500 outline-none text-fuchsia-500 rounded-2xl text-center font-bold my-4">
+                <input id="login-password" type="password" placeholder="Insira sua senha aqui!" class="h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
+                <button id="btn-login" class="mt-4 cursor-pointer active:scale-90 shadow-lg shadow-[#7631bd]/50 px-8 border border-none rounded-2xl h-10 mx-8 bg-[#9b42f5] font-bold text-base active:bg-[#c778d6]">Entrar</button>
+                </div>
+            </div>
+            <div id="singup" class="mx-2 bg-[#6f4b94]/30 flex justify-center w-100 h-120 rounded-2xl grid justify-items-center self-start">
+                <h1 class="mt-6 font-bold text-3xl">Cadastre-se</h1>
+                <div class="mt-24 grid justify-items-center absolute mx-4 text-center">
+                    <label for="opcoes"></label>
+                    <select id="opcoes" name="opcoes" class="font-bold border-none border-2 focus:text-fuchsia-500 focus:border-solid focus:border-fuchsia-500 outline-none text-center text-bold text-[#F094FD] bg-white h-10 w-40 rounded-2xl">
+                        <option value="" disabled selected>quem é você?</option>
+                        <option value="1">Fotografo</option>
+                        <option value="2">Cliente</option>
+                        <option value="3">Empresa</option>
+                    </select>
+                    <input id="singup-email" type="email" placeholder="Insira seu email aqui!" class="h-10 w-80 bg-white border-2 transition border-none focus:border-solid focus:border-fuchsia-500 outline-none text-fuchsia-500 rounded-2xl text-center font-bold my-4">
+                    <input id="singup-password" type="password" placeholder="Insira sua senha aqui!" class="h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
+                    <input id="singup-password" type="password" placeholder="Insira novamente sua senha!" class="my-4 h-10 w-80 bg-white text-fuchsia-500 rounded-2xl text-center font-bold border-none focus:border-solid border-2 focus:border-fuchsia-500 outline-none">
+                    <button id="btn-singup" class="mt-4 cursor-pointer active:scale-90 shadow-lg shadow-[#7631bd]/50 px-8 border border-none rounded-2xl h-10 mx-8 bg-[#9b42f5] font-bold text-base active:bg-[#c778d6]">Entrar</button>
                 </div>
             </div>
         </div>
