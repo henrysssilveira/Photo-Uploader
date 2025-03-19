@@ -2,16 +2,22 @@
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<h'>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
 </head>
 <body class="bg-[#1b1324] text-[#f0f0f0f0]">
-    <h1>Seja bem vindo!</h1>
+    <header class="flex justify-around py-5 w-full h-full">
+        <h1 class="text-3xl font-bold">PhotoUploader</h1>
+        <div id="upload" class="font-semibold grid grid-cols-2 content-center gap">
+            <a href="upload.html" class="pd-4 font-bold content-center">Fazer Upload</a>
+            <button id="btn-logout" class="h-10 w-40 bg-white text-fuchsia-500 active:scale-90 active:bg-[#d5b5f5] active:text-white rounded-2xl">Sair</button>
+        </div>
+    </header>
+    <h1 class="flex justify-center text-5xl font-bold mt-4">Seja bem vindo!</h1>
     <div id="dashboard" class="">
-        <h2 id="welcome-message">Bem-vindo!</h2>
-        <button id="logout-btn">Sair</button>
     </div>
-    <script src="./js/dashboard.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
