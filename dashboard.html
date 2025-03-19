@@ -12,11 +12,21 @@
         <h1 class="text-3xl font-bold">PhotoUploader</h1>
         <div id="upload" class="font-semibold grid grid-cols-2 content-center gap">
             <a href="upload.html" class="pd-4 font-bold content-center">Fazer Upload</a>
-            <button id="btn-logout" class="h-10 w-40 bg-white text-fuchsia-500 active:scale-90 active:bg-[#d5b5f5] active:text-white rounded-2xl">Sair</button>
+            <button id="btn-logout" class="cursor-pointer h-10 w-40 bg-white text-fuchsia-500 active:scale-90 active:bg-[#d5b5f5] active:text-white rounded-2xl">Sair</button>
         </div>
     </header>
-    <h1 class="flex justify-center text-5xl font-bold mt-4">Seja bem vindo!</h1>
-    <div id="dashboard" class="">
+    <h1 class="flex justify-center text-5xl font-bold mt-4 text-shadow-custom">Seja bem vindo!</h1>
+    <div id="dashboard" class="flex justify-center mt-6 items-center">
+        <div class="grid content-center">
+            <h1 id="titulo-busca" class="2xl text-bold flex justify-center mb-5 font-bold text-lg">Procure aqui as fotos dos seus clientes!</h1>
+            <div>
+                <input id="busca-ft" class="h-10 w-xl bg-gray-200 outline-none rounded-2xl text-center text-bold text-fuchsia-500 border-none focus:border-2 focus:border-solid focus:border-fuchsia-500 font-bold"  type="text" placeholder="Busque por nome do cliente, tags ou descrição da foto...">
+                <button id="busca-btn" class="cursor-pointer h-10 w-40 font-bold text-center text-bold bg-fuchsia-500 text-white active:scale-90 active:bg-[#c778d6] rounded-2xl ml-2 shadow-[#7631bd]/50 shadow-lg ">Procurar...</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-7">
+        <div id="campo-img" class="w-[1080px] h-[348px] flex justify-center border-dashed border-5 border-fuchsia-900 justify-items-center bg-[#231333] text-black rounded-2xl">texte</div>
     </div>
     <script src="./js/script.js"></script>
 </body>
