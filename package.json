@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/henrysssilveira/Photo-Uploader/issues"
   },
-  "homepage": "https://github.com/henrysssilveira/Photo-Uploader#readme"
+  "homepage": "https://github.com/henrysssilveira/Photo-Uploader#readme",
+  "dependencies": {
+    "firebase": "^11.5.0",
+    "photo-uploader": "file:"
+  }
 }
