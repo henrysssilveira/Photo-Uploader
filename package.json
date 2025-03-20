@@ -1,0 +1,19 @@
+{
+  "name": "photo-uploader",
+  "version": "1.0.0",
+  "description": "Olá, Bem vindo ao PhotoUploader, uma plataforma que falicita o envio de fotos para clientes, sendo usado um codigo temporario, que duram 24h.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrysssilveira/Photo-Uploader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrysssilveira/Photo-Uploader/issues"
+  },
+  "homepage": "https://github.com/henrysssilveira/Photo-Uploader#readme"
+}
