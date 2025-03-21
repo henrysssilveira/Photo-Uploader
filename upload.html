@@ -8,7 +8,14 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#222222] text-white flex justify-center">
-    <h1>PhotoUploader</h1>
+    <div class="flex justify-around py-5 w-full h-full">
+        <h1 class="text-3xl font-bold text-shadow-custom">PhotoUploader</h1>
+        <div id="upload" class="font-semibold grid grid-cols-2 content-center gap">
+            <a href="dashboard.html" class="pd-4 font-bold content-center">Dashboard</a>
+            <button id="btn-logout" class="cursor-pointer h-10 w-40 bg-white text-fuchsia-500 active:scale-90 active:bg-[#d5b5f5] active:text-white rounded-2xl">Sair</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
     <!--Usar o Cloudinary para os fotografos conseguirem localizar as fotos dos clientes via IA-->
 </body>
 </html>
