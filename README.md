@@ -20,7 +20,7 @@ Olá, Bem vindo ao PhotoUploader, uma plataforma que falicita o envio de fotos p
  │ ├── 📄 Novo Projeto-camera-1.png
  ├── 📁 js/
  │ ├── 📄 script.js
- │ ├── 📄 dashboard.js
+ │ ├── 📄 firebase.js
  ├── 📄 README.md
 
 # Funcionalidades (Futuras)
