@@ -9,24 +9,24 @@ Olá, Bem vindo ao PhotoUploader, uma plataforma que falicita o envio de fotos p
 # Estrutura
 
 📁 PhotoUpload
- ├── 📄 index.html
- ├── 📄 upload.html
- ├── 📄 login.html
- ├── 📄 dashboard.html
- ├── 📄 package.json
- ├── 📄 package-lock.json
- ├── 📄 .gitignore
- ├── 📁 .vscode/
- │ ├── 📄 settings.json
- ├── 📁 css/
- │ ├── 📄 style.css
- ├── 📁 assets/
- │ ├── 📄 Novo Projeto-camera-1.png
- │ ├── 📄 file-import-solid.svg
- ├── 📁 js/
- │ ├── 📄 script.js
- │ ├── 📄 firebase.js
- ├── 📄 README.md
+  - ├── 📄 index.html
+  - ├── 📄 upload.html
+  - ├── 📄 login.html
+  - ├── 📄 dashboard.html
+  - ├── 📄 package.json
+  - ├── 📄 package-lock.json
+  - ├── 📄 .gitignore
+  - ├── 📁 .vscode/
+  - │ ├── 📄 settings.json
+  - ├── 📁 css/
+  - │ ├── 📄 style.css
+  - ├── 📁 assets/
+  - │ ├── 📄 Novo Projeto-camera-1.png
+  - │ ├── 📄 file-import-solid.svg
+  - ├── 📁 js/
+  - │ ├── 📄 script.js
+  - │ ├── 📄 firebase.js
+  - ├── 📄 README.md
 
 # Funcionalidades (Futuras)
 ✅ Upload seguro de fotos 📤  
